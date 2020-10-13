@@ -25,30 +25,33 @@ mvn clean install
 cd BookStoreDemo
 java -jar target/bookstore-demo-1.0.0.jar
 ```
+Open Postman and navigate on http://localhost:8080/
 
 ## Exposed API
 
 ### Book
 
-- List all books (optionally with customers who borrowed book)
-/books GET
+- List all books (optionally with customers who borrowed book) 
+<i>books GET</i>
 
 ![List all books](https://github.com/ipeonte/BookStoreDemo/blob/master/doc/img/list_books.png)
 
-- Create Book
-/books POST
+- Create Book 
+<i>/books POST</i>
 
 ![Create Book](https://github.com/ipeonte/BookStoreDemo/blob/master/doc/img/create_book.png)
 
-- Update Book
-/books/{id} PUT
+- Update Book 
+<i>books/{id} PUT</i>
 
 ![Update Book](https://github.com/ipeonte/BookStoreDemo/blob/master/doc/img/update_book.png)
 
-- Delete Book (if not handled by customer)
-/books/{id} DELETE
+- Delete Book (if not handled by customer) 
+<i>books/{id}</i>
 
-![Delete Book](https://github.com/ipeonte/BookStoreDemo/blob/master/doc/img/delete_book.png)
+![Delete Book Step 1](https://github.com/ipeonte/BookStoreDemo/blob/master/doc/img/delete_book_1.png)
+
+![Delete Book Step 2](https://github.com/ipeonte/BookStoreDemo/blob/master/doc/img/delete_book_2.png)
 
 ### Customer
 
@@ -70,7 +73,9 @@ java -jar target/bookstore-demo-1.0.0.jar
 - Delete Customer (if not own any book)
 /customers/{id} DELETE
 
-![Delete Customer](https://github.com/ipeonte/BookStoreDemo/blob/master/doc/img/delete_customer.png)
+![Delete Customer Step 1](https://github.com/ipeonte/BookStoreDemo/blob/master/doc/img/delete_customer_1.png)
+
+![Delete Customer Step 2](https://github.com/ipeonte/BookStoreDemo/blob/master/doc/img/delete_customer_2.png)
 
 ### Customer Books
 
