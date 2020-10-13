@@ -31,23 +31,27 @@ Open Postman and navigate on http://localhost:8080/
 
 ### Book
 
-- List all books (optionally with customers who borrowed book) 
+- List all books (optionally with customers who borrowed book)
+
 <i>books GET</i>
 
 ![List all books](https://github.com/ipeonte/BookStoreDemo/blob/master/doc/img/list_books.png)
 
-- Create Book 
+- Create Book
+
 <i>/books POST</i>
 
 ![Create Book](https://github.com/ipeonte/BookStoreDemo/blob/master/doc/img/create_book.png)
 
-- Update Book 
-<i>books/{id} PUT</i>
+- Update Book
+
+<i>/books/{id} PUT</i>
 
 ![Update Book](https://github.com/ipeonte/BookStoreDemo/blob/master/doc/img/update_book.png)
 
-- Delete Book (if not handled by customer) 
-<i>books/{id}</i>
+- Delete Book (if not handled by customer)
+
+<i>/books/{id} DELETE</i>
 
 ![Delete Book Step 1](https://github.com/ipeonte/BookStoreDemo/blob/master/doc/img/delete_book_1.png)
 
@@ -56,22 +60,26 @@ Open Postman and navigate on http://localhost:8080/
 ### Customer
 
 - List all Customers (optionally with used books)
-/customers GET
+
+<i>customers GET</i>
 
 ![List all Customers](https://github.com/ipeonte/BookStoreDemo/blob/master/doc/img/list_customers.png)
 
 - Create Customer
-/customers POST
+
+<i>/customers POST</i>
 
 ![Create Customer](https://github.com/ipeonte/BookStoreDemo/blob/master/doc/img/create_customer.png)
 
 - Update Customer
-/customers/{id} PUT
+
+<i>/customers/{id} PUT</i>
 
 ![Update Customer](https://github.com/ipeonte/BookStoreDemo/blob/master/doc/img/update_customer.png)
 
 - Delete Customer (if not own any book)
-/customers/{id} DELETE
+
+<i>/customers/{id} DELETE</i>
 
 ![Delete Customer Step 1](https://github.com/ipeonte/BookStoreDemo/blob/master/doc/img/delete_customer_1.png)
 
@@ -80,11 +88,13 @@ Open Postman and navigate on http://localhost:8080/
 ### Customer Books
 
 - Add Book to Customer
-/customers/{cust_id}/books/{book_id} POST
+
+<i>/customers/{cust_id}/books/{book_id} POST</i>
 
 ![Add Book to Customer](https://github.com/ipeonte/BookStoreDemo/blob/master/doc/img/add_customer_book.png)
 
 - Remove Book from Customer
-/customers/{cust_id}/books/{book_id} DELETE
+
+<i>/customers/{cust_id}/books/{book_id} DELETE</i>
 
 ![Remove Book to Customer](https://github.com/ipeonte/BookStoreDemo/blob/master/doc/img/remove_customer_book.png)
